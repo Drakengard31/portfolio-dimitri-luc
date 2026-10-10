@@ -2,9 +2,9 @@
 
 ## Objectif
 
-Refaire entièrement le portfolio du développeur front-end pour le présenter de manière plus professionnelle. Le site mettra en valeur sa formation **Intégrateur Web d’OpenClassrooms (développeur front-end)**, les projets réalisés pendant la formation et ses projets personnels, qui illustrent la poursuite de son apprentissage.
+Refaire entièrement le portfolio de **Dimitri Luc**, développeur front-end formé au parcours **Intégrateur Web d’OpenClassrooms**. Le site présente sept projets réalisés pendant la formation et trois projets personnels qui illustrent la poursuite de son apprentissage.
 
-Les informations d’identité, les projets détaillés, les technologies réellement utilisées, les coordonnées et les liens seront ajoutés à partir des renseignements fournis par le propriétaire. Aucun nom, résultat, niveau de compétence, lien ou détail de projet ne sera inventé. En attendant, les emplacements incomplets resteront clairement identifiés comme tels et ne seront pas présentés comme des réalisations réelles.
+Les noms, liens et informations des projets ont été transmis par Dimitri ; les descriptions et technologies sont vérifiées à partir des dépôts GitHub accessibles. Les détails non confirmés ne sont pas inventés. Les identifiants ArgentBank fournis sont présentés comme accès de démonstration dans un bloc repliable. Aucune clé d’API de projet n’est copiée dans le portfolio.
 
 ## Direction visuelle
 
@@ -18,20 +18,22 @@ Les informations d’identité, les projets détaillés, les technologies réell
 - **Système typographique :** sans-sérif « DM Sans » pour le texte et les titres, avec une sans-sérif système de repli ; « IBM Plex Mono » pour les étiquettes, technologies et repères. Grande échelle de titre sur écran large, réduite de façon fluide sur mobile.
 - **Essence de marque :** un développeur front-end qui transforme des idées et des maquettes en interfaces lisibles, accessibles et soignées ; personnalité **curieuse, rigoureuse, concrète**.
 - **Voix de marque :** première personne, directe et chaleureuse, axée sur les choix et l’apprentissage. Exemples : « Je transforme une idée claire en interface vivante. » ; « Mes projets, mes choix, ce que j’ai appris. » Ces formulations pourront être ajustées avec les mots du propriétaire.
-- **Logotype :** nom du propriétaire en typographie éditoriale, accompagné d’un signe angulaire original inspiré de `</>` ; le nom ne sera renseigné qu’après réception de son identité.
+- **Logotype :** nom **Dimitri Luc** en typographie éditoriale, accompagné d’un signe angulaire original inspiré de `</>`.
 - **Couleur de marque signature :** orange corail `#F26B3A`.
-- **Visuels :** pas de portrait générique ni de fausses captures de projets. Les vignettes de projets seront ajoutées lorsqu’elles seront disponibles ; le motif d’accueil sera dessiné en CSS/SVG pour rester distinctif sans stock photo.
+- **Visuels :** pas de portrait générique ni de fausses captures de projets. Les cartes utilisent des compositions typographiques abstraites, remplaçables par des captures réelles si elles sont fournies.
 
 ## Expérience et contenu
 
 Une page d’accueil en français avec navigation ancrée, comprenant :
 
-1. **Introduction / hero** : identité réelle, positionnement de développeur front-end, formation OpenClassrooms et appel à découvrir les projets.
+1. **Introduction / hero** : Dimitri Luc, positionnement de développeur front-end, formation OpenClassrooms et appel à découvrir les projets.
 2. **À propos** : parcours et motivation rédigés à partir des éléments fournis, sans inventer d’expérience professionnelle.
-3. **Projets** : sections séparées pour les projets de formation et les projets personnels ; chaque étude de cas pourra présenter contexte, rôle, technologies effectivement utilisées, apprentissages, lien de démonstration et dépôt GitHub.
-4. **Formation** : Intégrateur Web — OpenClassrooms, avec description et dates seulement si elles sont fournies.
-5. **Contact** : courriel et profils professionnels lorsqu’ils sont connus ; liens non renseignés absents plutôt que factices.
-6. **Pied de page** : navigation courte et année courante.
+3. **Projets de formation** : sept fiches pour Riding Cities, Booki, OhMyFood, Kasa, 724events, Print it et ArgentBank. Chaque fiche comprend une description factuelle, les technologies confirmées et les liens fournis vers le dépôt et la démo.
+4. **Projets personnels** : trois fiches séparées pour AppMétéo, Site vitrine — Boulangerie et DevShowcase, avec leurs descriptions vérifiées et leurs liens GitHub/démo.
+5. **Accès de démonstration ArgentBank** : afficher l’e-mail `tony@stark.com` et le mot de passe `password123` dans un bloc repliable clairement étiqueté comme compte de démo, conformément aux informations fournies par Dimitri.
+6. **Formation** : Intégrateur Web — OpenClassrooms ; dates seulement si elles sont fournies.
+7. **Contact** : courriel et profils professionnels lorsqu’ils sont connus ; liens non renseignés absents plutôt que factices.
+8. **Pied de page** : navigation courte et année courante.
 
 Le rendu sera responsive, utilisable au clavier, structuré avec des éléments HTML sémantiques et doté d’un contraste lisible. Le menu compact sur mobile restera accessible.
 
@@ -41,15 +43,15 @@ Site statique monosite, sans compte utilisateur, base de données ni backend : c
 
 Structure prévue :
 
-- `index.html` — contenu de la page, métadonnées initiales et sections accessibles.
+- `index.html` — contenu de la page, métadonnées initiales, dix fiches de projet et sections accessibles.
 - `src/styles.css` — variables visuelles, mise en page responsive, composants et préférences de mouvement.
 - `src/main.js` — interactions légères de navigation mobile et petites améliorations progressives.
 - `public/manus-routes.json` — déclaration de la route de page `/`.
 - `public/favicon.svg` — signe graphique du portfolio.
 - `package.json`, `pnpm-lock.yaml`, `pnpm-workspace.yaml` — dépendance Vite épinglée et politique explicite des scripts d’installation selon les recommandations du projet.
 
-Le SEO de base comprendra un titre, une description, des métadonnées Open Graph et Twitter, ainsi qu’une structure de titres cohérente. Aucune URL canonique ni `og:url` ne sera devinée avant de connaître le domaine public réel. La publication n’est pas prévue dans cette étape : le résultat sera d’abord présenté en aperçu.
+Le SEO de base comprendra un titre, une description, des métadonnées Open Graph et Twitter, ainsi qu’une structure de titres cohérente. Aucune URL canonique ni `og:url` ne sera devinée avant de connaître le domaine public réel. Le site sera vérifié en aperçu ; aucune publication n’est demandée dans cette étape.
 
-## Hypothèses à confirmer par le propriétaire
+## Hypothèses et éléments restants
 
-Le portfolio est en français et l’identité visuelle ci-dessus constitue une proposition de départ, pas une préférence déjà exprimée. Le propriétaire pourra envoyer son nom d’affichage, les détails/liens des projets, ses liens professionnels, son e-mail, son ancien portfolio, son CV ou des captures d’écran ; ces éléments remplaceront les emplacements temporaires avant la finition.
+Le portfolio est en français et la direction visuelle constitue la proposition approuvée. Les dix projets et l’identité sont maintenant renseignés. Les dates de formation, l’adresse e-mail, les profils professionnels, le CV, les captures de projets et l’éventuelle adresse de l’ancien portfolio restent facultatifs et ne seront ajoutés que s’ils sont fournis.
