@@ -34,7 +34,7 @@
 | DevShowcase | https://github.com/Drakengard31/Devshowcase | https://devshowcase-rosy.vercel.app/ |
 
 - Aucune clé d’API trouvée dans un dépôt n’est recopiée dans le portfolio ou ses métadonnées.
-- Les visuels restent des compositions graphiques typographiques, pas de fausses captures d’écran des projets.
+- La photo Riding Cities fournie par Dimitri est affichée sur sa fiche ; les autres vignettes restent des compositions graphiques jusqu’à réception des images correspondantes, sans être présentées comme des captures d’écran.
 
 ## 3. Donner accès au contact professionnel
 

@@ -248,7 +248,7 @@ button { color: inherit; font: inherit; }
 }
 
 
-/* Portfolio projects: bespoke typographic covers, not mock screenshots. */
+/* Portfolio projects: authentic supplied screenshots mixed with bespoke visual covers. */
 .project-list { display: grid; gap: 15px; }
 .project-entry { min-width: 0; display: grid; grid-template-columns: .94fr 1.06fr; border: 1px solid var(--line); background: var(--paper); }
 .project-entry:nth-child(even) { grid-template-columns: 1.06fr .94fr; }
@@ -258,6 +258,8 @@ button { color: inherit; font: inherit; }
 .project-entry__art::before { width: 235px; height: 235px; top: 27px; right: -67px; }
 .project-entry__art::after { width: 146px; height: 146px; right: 15%; bottom: -65px; }
 .project-entry__art--riding { background: #e6b3a2; }
+.project-entry__art--photo { padding: 0; }
+.project-entry__image { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .project-entry__art--booki { background: #b8c9c0; }
 .project-entry__art--ohmyfood { background: #e9bd65; }
 .project-entry__art--kasa { background: #b9c3d7; }
