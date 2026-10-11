@@ -2,9 +2,9 @@
 
 ## 1. Présenter le parcours et la formation
 
-- Le portfolio est en français, présente son propriétaire **Dimitri Luc** comme développeur front-end et mentionne la formation **Intégrateur Web d’OpenClassrooms**.
-- Il inclut une présentation « À propos » fondée uniquement sur les renseignements transmis ; les expériences professionnelles, dates, compétences et résultats non fournis ne sont pas inventés.
-- Les coordonnées inconnues sont omises ou identifiées comme à compléter ; aucune coordonnée factice n’est affichée.
+- Le portfolio est en français, présente son propriétaire **Dimitri Luc** comme développeur front-end diplômé de la formation **Intégrateur Web d’OpenClassrooms (Bac+2)**.
+- La présentation « À propos » indique sa reconversion après six ans en restauration, son intérêt pour HTML et JavaScript avant sa formation, sa pratique front-end avec React/Redux/JavaScript, son apprentissage de Node.js/Express et son objectif full-stack JavaScript ; elle ne lui attribue aucune autre expérience ou date non fournie.
+- La mention de disponibilité immédiate affichée sur l’ancien portfolio n’est pas reprise, car elle peut être obsolète.
 
 ## 2. Mettre en valeur les dix projets
 
@@ -38,8 +38,10 @@
 
 ## 3. Donner accès au contact professionnel
 
-- Le portfolio permet d’accéder au courriel et aux profils professionnels (notamment LinkedIn et GitHub) lorsque Dimitri les transmet.
-- Les coordonnées et liens inconnus sont omis plutôt que remplacés par des coordonnées factices.
+- Le portfolio permet d’écrire à Dimitri à `lucdimitri31@gmail.com` via un lien `mailto:`.
+- Le portfolio lie le profil LinkedIn fourni : https://www.linkedin.com/in/dimitri-luc-03909b3a2/.
+- Le portfolio lie le profil GitHub confirmé par les dépôts fournis : https://github.com/Drakengard31.
+- Aucune autre coordonnée ou aucun autre profil inconnu n’est inventé.
 
 ## 4. Réaliser l’expérience visuelle et responsive approuvée
 

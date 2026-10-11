@@ -2,7 +2,7 @@
 
 ## Objectif
 
-Refaire entièrement le portfolio de **Dimitri Luc**, développeur front-end formé au parcours **Intégrateur Web d’OpenClassrooms**. Le site présente sept projets réalisés pendant la formation et trois projets personnels qui illustrent la poursuite de son apprentissage.
+Refaire entièrement le portfolio de **Dimitri Luc**, développeur front-end diplômé du parcours **Intégrateur Web d’OpenClassrooms (Bac+2)**. Le site présente sept projets réalisés pendant la formation et trois projets personnels qui illustrent la poursuite de son apprentissage. Sa présentation reprend aussi sa reconversion après six ans en restauration, son intérêt pour le code et son apprentissage actuel de Node.js et Express en vue d’évoluer vers le full-stack JavaScript.
 
 Les noms, liens et informations des projets ont été transmis par Dimitri ; les descriptions et technologies sont vérifiées à partir des dépôts GitHub accessibles. Les détails non confirmés ne sont pas inventés. Les identifiants ArgentBank fournis sont présentés comme accès de démonstration dans un bloc repliable. Aucune clé d’API de projet n’est copiée dans le portfolio.
 
@@ -26,13 +26,13 @@ Les noms, liens et informations des projets ont été transmis par Dimitri ; les
 
 Une page d’accueil en français avec navigation ancrée, comprenant :
 
-1. **Introduction / hero** : Dimitri Luc, positionnement de développeur front-end, formation OpenClassrooms et appel à découvrir les projets.
-2. **À propos** : parcours et motivation rédigés à partir des éléments fournis, sans inventer d’expérience professionnelle.
+1. **Introduction / hero** : Dimitri Luc, positionnement front-end, diplôme OpenClassrooms Bac+2, pratique React/Redux/JavaScript, apprentissage Node.js/Express et appel à découvrir les projets.
+2. **À propos** : reconversion après six ans en restauration, intérêt antérieur pour HTML/JavaScript et progression vers le full-stack JavaScript, à partir du portfolio existant fourni par Dimitri.
 3. **Projets de formation** : sept fiches pour Riding Cities, Booki, OhMyFood, Kasa, 724events, Print it et ArgentBank. Chaque fiche comprend une description factuelle, les technologies confirmées et les liens fournis vers le dépôt et la démo.
 4. **Projets personnels** : trois fiches séparées pour AppMétéo, Site vitrine — Boulangerie et DevShowcase, avec leurs descriptions vérifiées et leurs liens GitHub/démo.
 5. **Accès de démonstration ArgentBank** : afficher l’e-mail `tony@stark.com` et le mot de passe `password123` dans un bloc repliable clairement étiqueté comme compte de démo, conformément aux informations fournies par Dimitri.
 6. **Formation** : Intégrateur Web — OpenClassrooms ; dates seulement si elles sont fournies.
-7. **Contact** : courriel et profils professionnels lorsqu’ils sont connus ; liens non renseignés absents plutôt que factices.
+7. **Contact** : e-mail `lucdimitri31@gmail.com`, LinkedIn `https://www.linkedin.com/in/dimitri-luc-03909b3a2/` et profil GitHub `https://github.com/Drakengard31`, avec liens directs.
 8. **Pied de page** : navigation courte et année courante.
 
 Le rendu sera responsive, utilisable au clavier, structuré avec des éléments HTML sémantiques et doté d’un contraste lisible. Le menu compact sur mobile restera accessible.
@@ -54,4 +54,4 @@ Le SEO de base comprendra un titre, une description, des métadonnées Open Grap
 
 ## Hypothèses et éléments restants
 
-Le portfolio est en français et la direction visuelle constitue la proposition approuvée. Les dix projets et l’identité sont maintenant renseignés. Les dates de formation, l’adresse e-mail, les profils professionnels, le CV, les captures de projets et l’éventuelle adresse de l’ancien portfolio restent facultatifs et ne seront ajoutés que s’ils sont fournis.
+Le portfolio est en français et la direction visuelle constitue la proposition approuvée. Les dix projets, l’identité, le parcours résumé et les coordonnées sont maintenant renseignés. Les dates de formation, le CV et des captures réelles des projets restent facultatifs. La mention « disponible immédiatement » présente sur l’ancien portfolio n’est pas reprise, car elle peut dater.
