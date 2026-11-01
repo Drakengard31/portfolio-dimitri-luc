@@ -264,6 +264,8 @@ button { color: inherit; font: inherit; }
 .project-entry__art--ohmyfood { background: #e9bd65; }
 .project-entry__art--kasa { background: #b9c3d7; }
 .project-entry__art--events { background: #253b45; color: var(--paper); }
+.project-entry__art--events-photo { background: #20252a; }
+.project-entry__art--events-photo .project-entry__image { object-fit: contain; }
 .project-entry__art-kicker, .project-entry__art-code { position: relative; z-index: 1; font: 9px var(--mono); letter-spacing: .09em; text-transform: uppercase; }
 .project-entry__art-title { position: relative; z-index: 1; align-self: flex-start; font-size: clamp(41px, 5vw, 66px); line-height: .88; font-weight: 600; letter-spacing: -.08em; text-transform: uppercase; }
 .project-entry__art-code { align-self: flex-end; padding: 6px 8px; border: 1px solid currentColor; }
