@@ -307,6 +307,8 @@ button { color: inherit; font: inherit; }
 .project-entry__art--printit { background: #d9b985; }
 .project-entry__art--argentbank { background: #b5c5bd; }
 .project-entry__art--weather { background: #e5c76d; }
+.project-entry__art--weather-photo { background: #0783b4; }
+.project-entry__art--weather-photo .project-entry__image { object-fit: contain; }
 .project-entry__art--bakery { background: #ddbaa0; }
 .project-entry__art--showcase { background: #b9c2d4; }
 .project-collection-heading { display: grid; grid-template-columns: minmax(150px, .5fr) 1fr auto; align-items: baseline; gap: 16px; margin: 35px 0 14px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
