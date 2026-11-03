@@ -34,7 +34,7 @@
 | DevShowcase | https://github.com/Drakengard31/Devshowcase | https://devshowcase-rosy.vercel.app/ |
 
 - Aucune clé d’API trouvée dans un dépôt n’est recopiée dans le portfolio ou ses métadonnées.
-- Les visuels Riding Cities, Booki, OhMyFood, Kasa, 724events, Print it, ArgentBank, AppMétéo et Boulangerie fournis par Dimitri sont affichés sur leurs fiches ; les autres vignettes restent des compositions graphiques jusqu’à réception des images correspondantes, sans être présentées comme des captures d’écran.
+- Les visuels Riding Cities, Booki, OhMyFood, Kasa, 724events, Print it, ArgentBank, AppMétéo et Boulangerie fournis par Dimitri sont affichés sur leurs fiches ; DevShowcase est illustré par une capture de sa démo publique.
 
 ## 3. Donner accès au contact professionnel
 

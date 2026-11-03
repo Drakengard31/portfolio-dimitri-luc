@@ -313,6 +313,8 @@ button { color: inherit; font: inherit; }
 .project-entry__art--bakery-photo { background: #2d2925; }
 .project-entry__art--bakery-photo .project-entry__image { object-fit: contain; }
 .project-entry__art--showcase { background: #b9c2d4; }
+.project-entry__art--showcase-photo { min-height: 320px; background: #f5f6fa; }
+.project-entry__art--showcase-photo .project-entry__image { object-fit: contain; }
 .project-collection-heading { display: grid; grid-template-columns: minmax(150px, .5fr) 1fr auto; align-items: baseline; gap: 16px; margin: 35px 0 14px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
 .project-collection-heading--personal { margin-top: 55px; }
 .project-collection-heading__index, .project-collection-heading__count { color: var(--accent-dark); font: 9px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
