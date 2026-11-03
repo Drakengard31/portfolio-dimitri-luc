@@ -6,6 +6,8 @@ Refaire entièrement le portfolio de **Dimitri Luc**, développeur front-end dip
 
 Les noms, liens et informations des projets ont été transmis par Dimitri ; les descriptions et technologies sont vérifiées à partir des dépôts GitHub accessibles. Les détails non confirmés ne sont pas inventés. Les identifiants ArgentBank fournis sont présentés comme accès de démonstration dans un bloc repliable. Aucune clé d’API de projet n’est copiée dans le portfolio.
 
+Pour l’envoi demandé vers GitHub, le dépôt sera clonable : les dix visuels seront versionnés sous `public/assets/projects/`, les chemins de page et d’images seront relatifs, Vite utilisera `base: './'`, et un `README.md` en français expliquera le projet, la structure, l’installation, le développement et la compilation. L’export suivra le transfert canonique WebDev vers un nouveau dépôt `Drakengard31/portfolio-dimitri-luc`, créé privé après confirmation du propriétaire. Cette étape connecte le code source ; elle ne publie pas le site sur un hébergeur et ne rend pas le dépôt public.
+
 ## Direction visuelle
 
 - **Mouvement de design :** design éditorial suisse contemporain, adapté à un portfolio numérique — typographie généreuse, grille typographique nette et composition asymétrique.
@@ -20,7 +22,7 @@ Les noms, liens et informations des projets ont été transmis par Dimitri ; les
 - **Voix de marque :** première personne, directe et chaleureuse, axée sur les choix et l’apprentissage. Exemples : « Je transforme une idée claire en interface vivante. » ; « Mes projets, mes choix, ce que j’ai appris. » Ces formulations pourront être ajustées avec les mots du propriétaire.
 - **Logotype :** nom **Dimitri Luc** en typographie éditoriale, accompagné d’un signe angulaire original inspiré de `</>`.
 - **Couleur de marque signature :** orange corail `#F26B3A`.
-- **Visuels :** pas de portrait générique ni de fausses captures de projets. Les cartes utilisent des compositions typographiques abstraites, remplaçables par des captures réelles si elles sont fournies.
+- **Visuels :** pas de portrait générique ni de fausses captures de projets. Les fiches utilisent les visuels reçus pour neuf projets et une capture fidèle de la démo DevShowcase ; chaque fichier sera versionné avec le site pour que le dépôt cloné ne dépende pas du stockage Manus.
 
 ## Expérience et contenu
 
@@ -48,10 +50,13 @@ Structure prévue :
 - `src/main.js` — interactions légères de navigation mobile et petites améliorations progressives.
 - `public/manus-routes.json` — déclaration de la route de page `/`.
 - `public/favicon.svg` — signe graphique du portfolio.
+- `public/assets/projects/` — dix visuels locaux et versionnés avec le dépôt.
+- `vite.config.js` — base relative `./` pour le service sous un sous-chemin GitHub Pages.
+- `README.md` — présentation et instructions de lancement/compilation.
 - `package.json`, `pnpm-lock.yaml`, `pnpm-workspace.yaml` — dépendance Vite épinglée et politique explicite des scripts d’installation selon les recommandations du projet.
 
 Le SEO de base comprendra un titre, une description, des métadonnées Open Graph et Twitter, ainsi qu’une structure de titres cohérente. Aucune URL canonique ni `og:url` ne sera devinée avant de connaître le domaine public réel. Le site sera vérifié en aperçu ; aucune publication n’est demandée dans cette étape.
 
 ## Hypothèses et éléments restants
 
-Le portfolio est en français et la direction visuelle constitue la proposition approuvée. Les dix projets, l’identité, le parcours résumé et les coordonnées sont maintenant renseignés. Les dates de formation, le CV et des captures réelles des projets restent facultatifs. La mention « disponible immédiatement » présente sur l’ancien portfolio n’est pas reprise, car elle peut dater.
+Le portfolio est en français et la direction visuelle constitue la proposition approuvée. Les dix projets, l’identité, le parcours résumé, les coordonnées et leurs visuels sont maintenant renseignés. Les dates de formation et le CV restent facultatifs. La mention « disponible immédiatement » présente sur l’ancien portfolio n’est pas reprise, car elle peut dater. Le dépôt GitHub commence privé ; son éventuelle ouverture publique ou la publication du site constitue une décision ultérieure du propriétaire.
