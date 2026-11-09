@@ -29,7 +29,13 @@ Le serveur de développement est disponible à l’adresse affichée par Vite (p
 pnpm build
 ```
 
-Les fichiers optimisés sont générés dans `dist/`. La configuration Vite utilise une base relative pour permettre de servir le site à la racine ou sous un sous-chemin. Le dépôt contient le code source et le build statique, mais aucun déploiement GitHub Pages/Vercel/Netlify n’est configuré par défaut.
+Les fichiers optimisés sont générés dans `dist/`. La configuration Vite utilise une base relative pour permettre de servir le site à la racine ou sous un sous-chemin. Le workflow GitHub Pages décrit ci-dessous publie automatiquement cette sortie statique.
+
+## Déploiement GitHub Pages
+
+Le workflow `.github/workflows/deploy.yml` construit le site avec `pnpm install --frozen-lockfile` puis `pnpm build`, et publie le dossier `dist/` sur GitHub Pages à chaque push sur `main` (ou depuis l’action manuelle `Deploy portfolio to GitHub Pages`).
+
+Site : <https://drakengard31.github.io/portfolio-dimitri-luc/>
 
 ## CV
 
