@@ -53,13 +53,20 @@
 
 - Le contenu principal est présent dans le HTML initial et structuré avec des éléments sémantiques ; il ne dépend pas de JavaScript pour être lisible.
 - Le site statique comprend les métadonnées de base et la déclaration `/manus-routes.json` correspondant à sa route réelle.
-- Le résultat est vérifié en aperçu avant toute publication ; aucune publication du site n’est faite dans cette étape.
+- Le résultat est vérifié en aperçu avant tout déploiement ; le site n’est pas publié sur un hébergeur dans cette étape.
 
 ## 6. Préparer un dépôt GitHub professionnel et clonable
 
-- Le projet est connecté par le transfert canonique WebDev à un nouveau dépôt `Drakengard31/portfolio-dimitri-luc`, créé privé après la confirmation du propriétaire ; aucune visibilité publique n’est activée sans décision ultérieure explicite.
+- Le projet est connecté à `https://github.com/Drakengard31/portfolio-dimitri-luc`, dépôt public rendu public après autorisation explicite du propriétaire.
 - Les dix images de projet sont présentes et versionnées dans `public/assets/projects/` ; les pages ne dépendent plus des chemins `/manus-storage/`.
 - Les images et le favicon utilisent des chemins compatibles avec la racine et un sous-chemin de publication ; la compilation Vite utilise `base: './'`.
 - `README.md`, en français, présente le portfolio, sa structure, les technologies et les commandes d’installation, de développement et de compilation.
 - `.gitignore` exclut notamment `node_modules`, `dist`, les fichiers `.env` et secrets ; les dépendances sont reproductibles avec `pnpm-lock.yaml` et `pnpm install --frozen-lockfile`.
-- Cette demande porte sur le code source dans GitHub ; le site n’est pas déployé publiquement et le dépôt n’est pas rendu public dans cette étape.
+- Le dépôt public contient le code source ; le site lui-même n’est pas déployé publiquement sur un hébergeur dans cette étape.
+
+## 7. Rendre le CV téléchargeable par les recruteurs
+
+- Le fichier fourni par Dimitri `CV_Dimitri_Luc.pdf` est conservé sans modification à `public/documents/CV_Dimitri_Luc.pdf` et inclus dans le dépôt GitHub public.
+- Le hero affiche un bouton visible « Télécharger mon CV » lié au chemin relatif `./documents/CV_Dimitri_Luc.pdf` ; son attribut `download` propose le nom `CV_Dimitri_Luc.pdf`.
+- Le PDF est un fichier valide d’une page, non chiffré, servi comme document téléchargeable et accessible sans dépendre du stockage Manus.
+- Le README indique où se trouve le CV dans le dépôt ; le contenu du PDF n’est ni réécrit ni altéré.

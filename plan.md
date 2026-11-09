@@ -35,7 +35,8 @@ Une page d’accueil en français avec navigation ancrée, comprenant :
 5. **Accès de démonstration ArgentBank** : afficher l’e-mail `tony@stark.com` et le mot de passe `password123` dans un bloc repliable clairement étiqueté comme compte de démo, conformément aux informations fournies par Dimitri.
 6. **Formation** : Intégrateur Web — OpenClassrooms ; dates seulement si elles sont fournies.
 7. **Contact** : e-mail `lucdimitri31@gmail.com`, LinkedIn `https://www.linkedin.com/in/dimitri-luc-03909b3a2/` et profil GitHub `https://github.com/Drakengard31`, avec liens directs.
-8. **Pied de page** : navigation courte et année courante.
+8. **CV** : intégrer le PDF fourni `CV_Dimitri_Luc.pdf` sans modifier son contenu, dans `public/documents/CV_Dimitri_Luc.pdf`, avec un bouton visible « Télécharger mon CV » dans le hero et un attribut `download` conservant le nom du fichier.
+9. **Pied de page** : navigation courte et année courante.
 
 Le rendu sera responsive, utilisable au clavier, structuré avec des éléments HTML sémantiques et doté d’un contraste lisible. Le menu compact sur mobile restera accessible.
 
@@ -51,12 +52,13 @@ Structure prévue :
 - `public/manus-routes.json` — déclaration de la route de page `/`.
 - `public/favicon.svg` — signe graphique du portfolio.
 - `public/assets/projects/` — dix visuels locaux et versionnés avec le dépôt.
+- `public/documents/CV_Dimitri_Luc.pdf` — CV d’une page fourni par Dimitri, accessible au téléchargement.
 - `vite.config.js` — base relative `./` pour le service sous un sous-chemin GitHub Pages.
 - `README.md` — présentation et instructions de lancement/compilation.
 - `package.json`, `pnpm-lock.yaml`, `pnpm-workspace.yaml` — dépendance Vite épinglée et politique explicite des scripts d’installation selon les recommandations du projet.
 
-Le SEO de base comprendra un titre, une description, des métadonnées Open Graph et Twitter, ainsi qu’une structure de titres cohérente. Aucune URL canonique ni `og:url` ne sera devinée avant de connaître le domaine public réel. Le site sera vérifié en aperçu ; aucune publication n’est demandée dans cette étape.
+Le SEO de base comprendra un titre, une description, des métadonnées Open Graph et Twitter, ainsi qu’une structure de titres cohérente. Aucune URL canonique ni `og:url` ne sera devinée avant de connaître le domaine public réel. La source et le CV sont hébergés dans le dépôt GitHub public ; le site lui-même sera vérifié en aperçu, sans déploiement sur un hébergeur dans cette étape.
 
 ## Hypothèses et éléments restants
 
-Le portfolio est en français et la direction visuelle constitue la proposition approuvée. Les dix projets, l’identité, le parcours résumé, les coordonnées et leurs visuels sont maintenant renseignés. Les dates de formation et le CV restent facultatifs. La mention « disponible immédiatement » présente sur l’ancien portfolio n’est pas reprise, car elle peut dater. Le dépôt GitHub commence privé ; son éventuelle ouverture publique ou la publication du site constitue une décision ultérieure du propriétaire.
+Le portfolio est en français et la direction visuelle constitue la proposition approuvée. Les dix projets, l’identité, le parcours résumé, les coordonnées, les visuels et le CV fourni sont renseignés. Les dates de formation restent facultatives. La mention « disponible immédiatement » présente sur l’ancien portfolio n’est pas reprise, car elle peut dater. Le dépôt GitHub `Drakengard31/portfolio-dimitri-luc` est public après autorisation du propriétaire ; le site web lui-même n’est pas encore déployé.

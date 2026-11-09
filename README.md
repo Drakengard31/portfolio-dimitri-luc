@@ -10,7 +10,7 @@ Portfolio personnel de **Dimitri Luc**, développeur front-end diplômé du parc
 - Vite pour le serveur de développement et la compilation
 - pnpm pour la gestion des dépendances
 
-Le portfolio lui-même est un site statique, sans backend ni clé d’API. Les images des projets sont versionnées dans `public/assets/projects/` afin que le site reste complet après clonage.
+Le portfolio lui-même est un site statique, sans backend ni clé d’API. Les images des projets sont versionnées dans `public/assets/projects/` afin que le site reste complet après clonage. Le CV PDF fourni est stocké dans `public/documents/CV_Dimitri_Luc.pdf` et proposé au téléchargement depuis le hero.
 
 ## Démarrer en local
 
@@ -31,6 +31,10 @@ pnpm build
 
 Les fichiers optimisés sont générés dans `dist/`. La configuration Vite utilise une base relative pour permettre de servir le site à la racine ou sous un sous-chemin. Le dépôt contient le code source et le build statique, mais aucun déploiement GitHub Pages/Vercel/Netlify n’est configuré par défaut.
 
+## CV
+
+Le CV de Dimitri est disponible dans `public/documents/CV_Dimitri_Luc.pdf`. Le bouton « Télécharger mon CV » sur la page d’accueil permet de récupérer le PDF.
+
 ## Structure
 
 ```text
@@ -41,6 +45,7 @@ Les fichiers optimisés sont générés dans `dist/`. La configuration Vite util
 │   └── styles.css             # Styles et règles responsive
 ├── public/
 │   ├── assets/projects/       # Visuels des dix projets
+│   ├── documents/             # CV PDF téléchargeable
 │   ├── favicon.svg
 │   └── manus-routes.json      # Déclaration de route utilisée par l’aperçu Manus
 ├── vite.config.js             # Base relative pour le déploiement statique
