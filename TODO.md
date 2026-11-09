@@ -53,7 +53,7 @@
 
 - Le contenu principal est présent dans le HTML initial et structuré avec des éléments sémantiques ; il ne dépend pas de JavaScript pour être lisible.
 - Le site statique comprend les métadonnées de base et la déclaration `/manus-routes.json` correspondant à sa route réelle.
-- Le résultat est vérifié en aperçu avant tout déploiement ; le site n’est pas publié sur un hébergeur dans cette étape.
+- Le portfolio est publié sur l’hébergement WebDev statique à la demande de Dimitri afin que les recruteurs puissent consulter la page et télécharger le PDF.
 
 ## 6. Préparer un dépôt GitHub professionnel et clonable
 
@@ -62,7 +62,7 @@
 - Les images et le favicon utilisent des chemins compatibles avec la racine et un sous-chemin de publication ; la compilation Vite utilise `base: './'`.
 - `README.md`, en français, présente le portfolio, sa structure, les technologies et les commandes d’installation, de développement et de compilation.
 - `.gitignore` exclut notamment `node_modules`, `dist`, les fichiers `.env` et secrets ; les dépendances sont reproductibles avec `pnpm-lock.yaml` et `pnpm install --frozen-lockfile`.
-- Le dépôt public contient le code source ; le site lui-même n’est pas déployé publiquement sur un hébergeur dans cette étape.
+- Le dépôt public contient le code source ; le site déployé est hébergé séparément sur la plateforme WebDev.
 
 ## 7. Rendre le CV téléchargeable par les recruteurs
 
@@ -70,3 +70,10 @@
 - Le hero affiche un bouton visible « Télécharger mon CV » lié au chemin relatif `./documents/CV_Dimitri_Luc.pdf` ; son attribut `download` propose le nom `CV_Dimitri_Luc.pdf`.
 - Le PDF est un fichier valide d’une page, non chiffré, servi comme document téléchargeable et accessible sans dépendre du stockage Manus.
 - Le README indique où se trouve le CV dans le dépôt ; le contenu du PDF n’est ni réécrit ni altéré.
+
+## 8. Déployer le portfolio pour les recruteurs
+
+- Publier la version actuelle du site comme site statique WebDev à partir de la sortie `dist`, avec la commande configurée `pnpm install --frozen-lockfile && pnpm build`.
+- Conserver `publishing.auto_publish` désactivé et n’effectuer que la publication ponctuelle explicitement demandée par Dimitri.
+- Le résultat de publication fournit l’URL exacte de la version en ligne ; aucun domaine personnalisé n’est supposé.
+- Le site publié permet d’accéder au bouton « Télécharger mon CV » et au PDF servi depuis `public/documents/CV_Dimitri_Luc.pdf`.
