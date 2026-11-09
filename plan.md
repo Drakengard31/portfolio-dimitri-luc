@@ -6,22 +6,22 @@ Refaire entièrement le portfolio de **Dimitri Luc**, développeur front-end dip
 
 Les noms, liens et informations des projets ont été transmis par Dimitri ; les descriptions et technologies sont vérifiées à partir des dépôts GitHub accessibles. Les détails non confirmés ne sont pas inventés. Les identifiants ArgentBank fournis sont présentés comme accès de démonstration dans un bloc repliable. Aucune clé d’API de projet n’est copiée dans le portfolio.
 
-Pour l’envoi demandé vers GitHub, le dépôt sera clonable : les dix visuels seront versionnés sous `public/assets/projects/`, les chemins de page et d’images seront relatifs, Vite utilisera `base: './'`, et un `README.md` en français expliquera le projet, la structure, l’installation, le développement et la compilation. L’export suivra le transfert canonique WebDev vers un nouveau dépôt `Drakengard31/portfolio-dimitri-luc`, créé privé après confirmation du propriétaire. Cette étape connecte le code source ; elle ne publie pas le site sur un hébergeur et ne rend pas le dépôt public.
+Le dépôt public `Drakengard31/portfolio-dimitri-luc` contient le code clonable, les dix visuels versionnés sous `public/assets/projects/`, les chemins relatifs compatibles avec GitHub Pages et Vercel, et un `README.md` en français. Cette tâche prolonge le site existant sans refaire l’export du dépôt.
 
 ## Direction visuelle
 
 - **Mouvement de design :** design éditorial suisse contemporain, adapté à un portfolio numérique — typographie généreuse, grille typographique nette et composition asymétrique.
 - **Principes centraux :** lisibilité avant l’ornement ; parcours rapide entre profil, projets et contact ; authenticité des réalisations ; accessibilité et sobriété.
-- **Philosophie colorielle :** fond ivoire doux et texte bleu-noir pour une impression calme et professionnelle ; orange corail comme accent énergique et immédiatement reconnaissable, réservé aux actions, repères et détails.
+- **Philosophie colorielle :** fond ivoire doux et texte bleu-noir pour une impression calme et professionnelle ; l’orange corail `#F26B3A` reste l’accent énergique des actions et repères, tandis que le bleu pétrole `#277B78` et son ton pâle `#DCE9E5` apportent une seconde couleur posée aux états de focus, métadonnées et détails de projet.
 - **Paradigme de mise en page :** composition éditoriale alignée à gauche, alternant grands titres, colonnes décalées et études de cas horizontales plutôt qu’une grille uniforme centrée.
 - **Éléments signature :** repères de section numérotés (« 01 », « 02 ») ; filet orange fin qui guide la lecture ; petit motif de balises de code angulaires dans le logotype.
-- **Philosophie d’interaction :** navigation par ancres directe, commandes visibles, états clavier clairement perceptibles et menu mobile utilisable sans souris.
-- **Animation :** transitions courtes et discrètes (environ 180–240 ms) sur les liens et boutons ; aucun mouvement décoratif obligatoire ; respecter `prefers-reduced-motion`.
+- **Philosophie d’interaction :** navigation par ancres directe, commandes visibles, états clavier clairement perceptibles et menu mobile utilisable sans souris ; le corail reste réservé aux appels principaux et le pétrole souligne les états secondaires.
+- **Animation :** entrée du hero en cascade de 420 à 550 ms ; révélation au défilement des blocs et projets par opacité et translation verticale de 20 px en 480 ms, une seule fois avec `IntersectionObserver` ; au survol, légère élévation de carte, liseré pétrole et zoom d’image limité à `1.035` en 460 ms ; les flèches glissent de 4 px en 180 ms. Les contenus restent visibles sans JavaScript et les mouvements sont neutralisés par `prefers-reduced-motion`.
 - **Système typographique :** sans-sérif « DM Sans » pour le texte et les titres, avec une sans-sérif système de repli ; « IBM Plex Mono » pour les étiquettes, technologies et repères. Grande échelle de titre sur écran large, réduite de façon fluide sur mobile.
 - **Essence de marque :** un développeur front-end qui transforme des idées et des maquettes en interfaces lisibles, accessibles et soignées ; personnalité **curieuse, rigoureuse, concrète**.
 - **Voix de marque :** première personne, directe et chaleureuse, axée sur les choix et l’apprentissage. Exemples : « Je transforme une idée claire en interface vivante. » ; « Mes projets, mes choix, ce que j’ai appris. » Ces formulations pourront être ajustées avec les mots du propriétaire.
 - **Logotype :** nom **Dimitri Luc** en typographie éditoriale, accompagné d’un signe angulaire original inspiré de `</>`.
-- **Couleur de marque signature :** orange corail `#F26B3A`.
+- **Couleur de marque signature :** orange corail `#F26B3A`, équilibré par le bleu pétrole `#277B78` comme accent secondaire distinctif.
 - **Visuels :** pas de portrait générique ni de fausses captures de projets. Les fiches utilisent les visuels reçus pour neuf projets et une capture fidèle de la démo DevShowcase ; chaque fichier sera versionné avec le site pour que le dépôt cloné ne dépende pas du stockage Manus.
 
 ## Expérience et contenu
@@ -48,7 +48,7 @@ Structure prévue :
 
 - `index.html` — contenu de la page, métadonnées initiales, dix fiches de projet et sections accessibles.
 - `src/styles.css` — variables visuelles, mise en page responsive, composants et préférences de mouvement.
-- `src/main.js` — interactions légères de navigation mobile et petites améliorations progressives.
+- `src/main.js` — navigation mobile, année courante et révélation progressive accessible via `IntersectionObserver`.
 - `public/manus-routes.json` — déclaration de la route de page `/`.
 - `public/favicon.svg` — signe graphique du portfolio.
 - `public/assets/projects/` — dix visuels locaux et versionnés avec le dépôt.
@@ -57,8 +57,8 @@ Structure prévue :
 - `README.md` — présentation et instructions de lancement/compilation.
 - `package.json`, `pnpm-lock.yaml`, `pnpm-workspace.yaml` — dépendance Vite épinglée et politique explicite des scripts d’installation selon les recommandations du projet.
 
-Le SEO de base comprend un titre, une description et des métadonnées Open Graph et Twitter dans le HTML initial. Aucune URL canonique ni `og:url` ne sera devinée avant de connaître le domaine public réel. La source et le CV sont hébergés dans le dépôt GitHub public ; à la demande de Dimitri, le site statique sera publié sur l’hébergement WebDev à partir du dossier `dist`. La publication reste ponctuelle et `publishing.auto_publish` demeure désactivé. Le domaine public exact sera repris depuis le résultat de publication.
+Le SEO de base comprend un titre, une description et des métadonnées Open Graph et Twitter dans le HTML initial. Aucune URL canonique ni `og:url` ne sera devinée. Les pushes sur `main` déclenchent actuellement le workflow GitHub Actions de compilation et de publication sur GitHub Pages (`https://drakengard31.github.io/portfolio-dimitri-luc/`). Dimitri demande aussi que la nouvelle version soit intégrée à son portfolio Vercel, à l’URL fournie `https://portfolio-7p4v.vercel.app/` ; cette URL affiche encore l’ancien site et sa liaison au dépôt n’est pas confirmée. Un déploiement GitHub Pages ne constitue pas une preuve de mise à jour de Vercel : cette dernière ne sera annoncée qu’après vérification de l’URL cible.
 
 ## Hypothèses et éléments restants
 
-Le portfolio est en français et la direction visuelle constitue la proposition approuvée. Les dix projets, l’identité, le parcours résumé, les coordonnées, les visuels et le CV fourni sont renseignés. Les dates de formation restent facultatives. La mention « disponible immédiatement » présente sur l’ancien portfolio n’est pas reprise, car elle peut dater. Le dépôt GitHub `Drakengard31/portfolio-dimitri-luc` est public après autorisation du propriétaire. Le site sera déployé sur l’hébergement WebDev ; aucun domaine personnalisé n’a été fourni.
+Le portfolio est en français ; la direction éditoriale et la palette corail/bleu pétrole sont approuvées. Les dix projets, l’identité, le parcours résumé, les coordonnées, les visuels et le CV fourni sont renseignés. Les dates de formation restent facultatives. La mention « disponible immédiatement » présente sur l’ancien portfolio n’est pas reprise, car elle peut dater. Le dépôt GitHub `Drakengard31/portfolio-dimitri-luc` est public. Le site GitHub Pages est déjà déployé ; la mise à jour de l’URL Vercel reste à confirmer après push.

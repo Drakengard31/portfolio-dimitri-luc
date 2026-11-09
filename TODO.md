@@ -45,15 +45,17 @@
 
 ## 4. Réaliser l’expérience visuelle et responsive approuvée
 
-- Le site utilise la direction éditoriale suisse contemporaine approuvée : fond ivoire doux, texte bleu-noir, orange corail signature `#F26B3A`, typographie lisible et composition asymétrique.
+- Le site utilise la direction éditoriale suisse contemporaine approuvée : fond ivoire doux, texte bleu-noir, orange corail signature `#F26B3A`, bleu pétrole secondaire `#277B78` avec un ton pâle `#DCE9E5`, typographie lisible et composition asymétrique.
 - La navigation relie l’introduction, la présentation, les projets, la formation et le contact ; le menu compact mobile est accessible.
-- La mise en page s’adapte aux écrans mobiles et larges, les interactions fonctionnent au clavier, les repères de focus restent visibles et les animations discrètes respectent `prefers-reduced-motion`.
+- Le hero entre en cascade sur 420–550 ms ; les blocs et les fiches projets apparaissent au défilement par translation verticale de 20 px et opacité, en 480 ms, une seule fois via `IntersectionObserver`.
+- Au survol, les fiches projet s’élèvent légèrement, prennent un liseré bleu pétrole et zooment l’image à `1.035` en 460 ms ; les flèches glissent de 4 px en 180 ms.
+- La mise en page s’adapte aux écrans mobiles et larges, les interactions fonctionnent au clavier, les repères de focus restent visibles, le contenu reste lisible sans JavaScript et `prefers-reduced-motion` désactive les mouvements.
 
 ## 5. Fournir une page web prête à prévisualiser
 
 - Le contenu principal est présent dans le HTML initial et structuré avec des éléments sémantiques ; il ne dépend pas de JavaScript pour être lisible.
 - Le site statique comprend les métadonnées de base et la déclaration `/manus-routes.json` correspondant à sa route réelle.
-- Le portfolio est publié sur l’hébergement WebDev statique à la demande de Dimitri afin que les recruteurs puissent consulter la page et télécharger le PDF.
+- Le site statique est publié sur GitHub Pages et permet aux recruteurs de consulter la page et de télécharger le PDF.
 
 ## 6. Préparer un dépôt GitHub professionnel et clonable
 
@@ -62,7 +64,7 @@
 - Les images et le favicon utilisent des chemins compatibles avec la racine et un sous-chemin de publication ; la compilation Vite utilise `base: './'`.
 - `README.md`, en français, présente le portfolio, sa structure, les technologies et les commandes d’installation, de développement et de compilation.
 - `.gitignore` exclut notamment `node_modules`, `dist`, les fichiers `.env` et secrets ; les dépendances sont reproductibles avec `pnpm-lock.yaml` et `pnpm install --frozen-lockfile`.
-- Le dépôt public contient le code source ; le site déployé est hébergé séparément sur la plateforme WebDev.
+- Le dépôt public contient le code source ; le workflow GitHub Actions héberge séparément le site sur GitHub Pages. Une publication GitHub Pages ne prouve pas qu’un déploiement Vercel a abouti.
 
 ## 7. Rendre le CV téléchargeable par les recruteurs
 
@@ -73,7 +75,6 @@
 
 ## 8. Déployer le portfolio pour les recruteurs
 
-- Publier la version actuelle du site comme site statique WebDev à partir de la sortie `dist`, avec la commande configurée `pnpm install --frozen-lockfile && pnpm build`.
-- Conserver `publishing.auto_publish` désactivé et n’effectuer que la publication ponctuelle explicitement demandée par Dimitri.
-- Le résultat de publication fournit l’URL exacte de la version en ligne ; aucun domaine personnalisé n’est supposé.
-- Le site publié permet d’accéder au bouton « Télécharger mon CV » et au PDF servi depuis `public/documents/CV_Dimitri_Luc.pdf`.
+- Dimitri demande que les changements approuvés apparaissent sur son site Vercel existant à `https://portfolio-7p4v.vercel.app/` ; cette URL doit présenter la palette et les animations mises à jour ainsi que l’accès au CV.
+- Le dépôt `Drakengard31/portfolio-dimitri-luc` a un workflow GitHub Actions qui publie GitHub Pages à chaque push sur `main` ; cette publication séparée ne compte pas comme preuve de déploiement Vercel.
+- Ne considérer Vercel comme mis à jour qu’après avoir vérifié l’URL cible et constaté les nouveaux marqueurs de la version, avec le PDF toujours accessible.

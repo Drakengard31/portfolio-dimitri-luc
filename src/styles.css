@@ -8,6 +8,10 @@
   --line-dark: #34464b;
   --accent: #f26b3a;
   --accent-dark: #d95327;
+  --teal: #277b78;
+  --teal-dark: #245d5b;
+  --teal-pale: #dce9e5;
+  --teal-border: #c9ddd7;
   --white: #fffefa;
   --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
   --sans: "DM Sans", "Avenir Next", Avenir, sans-serif;
@@ -339,6 +343,58 @@ button { color: inherit; font: inherit; }
 @media (max-width: 430px) {
   .project-entry__demo-values { grid-template-columns: 1fr; }
   .project-collection-heading__count { font-size: 8px; }
+}
+
+
+/* Palette secondaire et micro-interactions approuvées. */
+:focus-visible { outline-color: var(--teal); }
+.nav-links a:hover, .text-link:hover, .site-footer__top:hover { color: var(--teal-dark); }
+.button span, .project-entry__link span, .contact__link span { transition: transform 180ms ease; }
+.button:hover span, .project-entry__link:hover span, .contact__link:hover span { transform: translateX(4px); }
+.hero-art__orb--back { background: var(--teal-pale); }
+.hero-art__cross--two { color: var(--teal); }
+.hero-art__caption-dot { background: var(--teal); }
+.scroll-cue__line { background: var(--teal); }
+.training-card__badge { border-color: var(--teal-border); color: var(--teal); }
+.project-entry {
+  transition: transform 280ms cubic-bezier(.2,.7,.2,1), box-shadow 280ms ease, border-color 280ms ease;
+}
+.project-entry:hover, .project-entry:focus-within {
+  transform: translateY(-5px);
+  border-color: rgba(39,123,120,.58);
+  box-shadow: 0 16px 30px rgba(24,39,45,.13);
+}
+.project-entry__image { transition: transform 460ms cubic-bezier(.2,.7,.2,1); }
+.project-entry:hover .project-entry__image, .project-entry:focus-within .project-entry__image { transform: scale(1.035); }
+.project-entry__category, .project-collection-heading__index, .project-collection-heading__count { color: var(--teal-dark); }
+.project-entry__technologies li { border-color: var(--teal-border); background: #f2f7f4; color: var(--teal-dark); }
+.project-entry__link--primary span { color: var(--accent); }
+
+@keyframes hero-enter {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero--entering .hero__copy > .eyebrow { animation: hero-enter 420ms both cubic-bezier(.2,.7,.2,1); }
+.hero--entering .hero__copy > h1 { animation: hero-enter 550ms 80ms both cubic-bezier(.2,.7,.2,1); }
+.hero--entering .hero__copy > .hero__lead { animation: hero-enter 500ms 160ms both cubic-bezier(.2,.7,.2,1); }
+.hero--entering .hero__copy > .hero__actions { animation: hero-enter 450ms 250ms both cubic-bezier(.2,.7,.2,1); }
+.hero--entering .hero__copy > .hero__meta { animation: hero-enter 450ms 330ms both cubic-bezier(.2,.7,.2,1); }
+.hero--entering .hero-art { animation: hero-enter 550ms 140ms both cubic-bezier(.2,.7,.2,1); }
+
+html.motion-ready .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 480ms ease, transform 480ms cubic-bezier(.2,.7,.2,1);
+}
+html.motion-ready .reveal.is-visible, html.motion-ready .reveal:focus-within { opacity: 1; transform: translateY(0); }
+html.motion-ready .project-entry.reveal.is-visible:hover,
+html.motion-ready .project-entry.reveal.is-visible:focus-within { transform: translateY(-5px); }
+
+@media (prefers-reduced-motion: reduce) {
+  html.motion-ready .reveal { opacity: 1; transform: none; transition: none; }
+  .project-entry:hover, .project-entry:focus-within, .button:hover { transform: none; }
+  .project-entry:hover .project-entry__image, .project-entry:focus-within .project-entry__image,
+  .button:hover span, .project-entry__link:hover span, .contact__link:hover span { transform: none; }
 }
 
 
